@@ -13,7 +13,7 @@
         enabled: yes
     - name: Find all contents inside directory
       ansible.builtin.find:
-        path: /usr/share/nginx/html
+        path: /user/share/nginx/html
         recursive: true
         hidden: true
         file-type: any
