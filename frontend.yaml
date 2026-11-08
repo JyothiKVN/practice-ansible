@@ -2,7 +2,12 @@
   hosts: frontend
   become: yes
   tasks:
-    - name: enable nginx
+    - name: install nginx
       dnf:
         name: nginx
         state: present
+    - name: start and enable nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
