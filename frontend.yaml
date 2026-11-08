@@ -14,7 +14,7 @@
     - name: Find all contents inside directory
       ansible.builtin.find:
         path: /user/share/nginx/html/
-        recursive: yes
+        recurse: yes
         hidden: yes
         file-type: any
       register: directory_contents
