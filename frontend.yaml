@@ -1,0 +1,5 @@
+- name: configure frontend
+  hosts: frontend
+  tasks:
+    - name: enable nginx
+      command: dnf install nginx:1.26 -y
