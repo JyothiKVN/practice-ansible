@@ -11,3 +11,10 @@
         name: nginx
         state: started
         enabled: yes
+    - name: Find all contents inside directory
+      ansible.builtin.find:
+        path: /usr/share/nginzx/html
+        recursive: true
+        hidden: true
+        file-type: any
+      register: directory-contents
