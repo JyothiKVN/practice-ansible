@@ -1,0 +1,10 @@
+- name: testing localhost
+  hosts: local
+  connection: local
+  tasks:
+    - name: print sample text
+      debug:
+        msg: "Printing sample text"
+    - name: print another tasks
+      debug:
+        msg: "Another task"
