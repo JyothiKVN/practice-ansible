@@ -16,5 +16,5 @@
         path: /user/share/nginx/html/
         recurse: yes
         hidden: yes
-        file-type: any
+        file_type: any
       register: directory_contents
