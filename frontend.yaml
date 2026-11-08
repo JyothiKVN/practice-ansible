@@ -3,4 +3,6 @@
   become: yes
   tasks:
     - name: enable nginx
-      command: dnf install nginx:1.26 -y
+      dnf:
+        name: nginx
+        state: present
